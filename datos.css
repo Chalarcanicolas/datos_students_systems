@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Color de fondo gris claro */
-    color: #333; /* Color del texto principal */
+    background-color: #9eb8e9; /* Color de fondo gris claro */
+    color: #000000; /* Color del texto principal */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 20px auto; /* Añadido un margen superior e inferior */
     background-color: #fff; /* Color de fondo blanco */
     padding: 20px;
     border-radius: 10px;
@@ -21,21 +21,39 @@ body {
 h3 {
     color: #c0392b; /* Color rojo */
     text-align: center;
+    margin-bottom: 20px; /* Añadido un espacio inferior */
 }
 
-
-
-
+input[type="text"],
+input[type="date"],
 textarea {
-    width: calc(100% - 22px);
+    width: calc(100% - 22px); /* Ajustado el ancho de los campos de entrada */
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Aumentado el espacio inferior */
+    border: 1px solid #e0dd12;
     border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #3498db; /* Color azul */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Añadida transición para el cambio de color al pasar el ratón */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Color azul más oscuro al pasar el ratón */
 }
 
 label {
     font-weight: bold;
+    display: block; /* Convertido a bloque para que cada etiqueta esté en una línea */
+    margin-bottom: 5px; /* Espacio inferior para separar etiquetas */
 }
 
 /* Agregar más estilos según sea necesario */
+
+
