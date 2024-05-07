@@ -4,6 +4,9 @@ body {
     color: #333; /* Color del texto principal */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -17,29 +20,11 @@ body {
 
 h3 {
     color: #c0392b; /* Color rojo */
+    text-align: center;
 }
 
-input[type="text"],
-input[type="date"] {
-    width: calc(50% - 10px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-input[type="submit"] {
-    background-color: #3498db; /* Color azul */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-input[type="submit"]:hover {
-    background-color: #2980b9; /* Color azul más oscuro al pasar el ratón */
-}
 
 textarea {
     width: calc(100% - 22px);
